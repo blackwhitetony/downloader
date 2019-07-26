@@ -6,6 +6,7 @@ from pyquery import PyQuery as pq
 
 with open('./config.json', 'r+') as f:
     cfg = json.load(f)
+    
 loc = cfg['save_path']
 turl = cfg['target_url']
 os.makedirs(loc)
