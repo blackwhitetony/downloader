@@ -19,9 +19,9 @@ ml = doc('.ml')
 cid = ml.children()
 lis = cid.items()
 for li in lis:
-    nowpage = nowpage + 1;
+    nowpage = nowpage + 1
     cur_page = li('a').attr.href
-    cur = requests.get(cur_page);
+    cur = requests.get(cur_page)
     cur.encoding = 'utf-8'
     curdoc = pq(cur.text)
     img = curdoc('.minifier').attr.src
