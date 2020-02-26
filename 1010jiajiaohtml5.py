@@ -11,10 +11,10 @@ import os
 import time
 import requests
 
-turl = input("网址 url\n")
-loc = input("保存路径\n")
-#turl = "http://www.1010jiajiao.com/html5app/daan/answer/id/1247317" 
-#loc = "/home/bwt/Pictures/answers/tfqy9-b/"
+#turl = input("网址 url\n")
+#loc = input("保存路径\n")
+turl = "http://www.1010jiajiao.com/html5app/daan/answer/id/1247317" 
+loc = "./tfqy9-b/"
 
 
 ff_options = webdriver.firefox.options.Options()

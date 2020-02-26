@@ -1,16 +1,10 @@
 import os
-#import json
 import time
 import requests
 from pyquery import PyQuery as pq
 
-#with open('./config.json', 'r+') as f:
-#    cfg = json.load(f)
-    
-#loc = cfg['save_path']
-#turl = cfg['target_url']
-loc = input("请输入保存地址")
-turl = input("请输入答案网址")
+turl = "http://www.1010jiajiao.com/html5app/daan/answer/id/1247317" 
+loc = "./tfqy9-b/"
 os.makedirs(loc)
 timmm = time.time()
 nowpage = 0
