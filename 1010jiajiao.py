@@ -1,14 +1,16 @@
 import os
-import json
+#import json
 import time
 import requests
 from pyquery import PyQuery as pq
 
-with open('./config.json', 'r+') as f:
-    cfg = json.load(f)
+#with open('./config.json', 'r+') as f:
+#    cfg = json.load(f)
     
-loc = cfg['save_path']
-turl = cfg['target_url']
+#loc = cfg['save_path']
+#turl = cfg['target_url']
+loc = input("请输入保存地址")
+turl = input("请输入答案网址")
 os.makedirs(loc)
 timmm = time.time()
 nowpage = 0
