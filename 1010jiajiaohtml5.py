@@ -18,7 +18,7 @@ loc = "./tfqy9-b/"
 
 
 ff_options = webdriver.firefox.options.Options()
-#ff_options.add_argument('--headless')
+ff_options.add_argument('--headless')
 work = webdriver.Firefox(options=ff_options)
 
 if __name__ == "__main__":
